@@ -1,6 +1,11 @@
 package solent.ac.uk.ood.examples.week10.model;
 
 public class Car extends Vehicle {
+    
+    public Car(String _RegNumber, int _weight)
+    {
+        
+    }
 
     @Override
     public Double calculateFee() {

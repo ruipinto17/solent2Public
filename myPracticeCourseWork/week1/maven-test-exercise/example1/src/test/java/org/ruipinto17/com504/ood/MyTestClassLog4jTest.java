@@ -17,9 +17,10 @@ import static org.junit.Assert.*;
  * @author 4coelr28
  */
 public class MyTestClassLog4jTest {
- @Test
+
+    @Test
     public void hello() {
-             MyTestClassLog4j myTestClassLog4j = new MyTestClassLog4j();
-       myTestClassLog4j.writeAboutMe();
+        MyTestClassLog4j myTestClassLog4j = new MyTestClassLog4j();
+        myTestClassLog4j.writeAboutMe();
     }
 }

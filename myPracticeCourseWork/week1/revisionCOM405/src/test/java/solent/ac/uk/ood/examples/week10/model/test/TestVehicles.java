@@ -19,8 +19,12 @@ import solent.ac.uk.ood.examples.week10.model.Vehicle;
 public class TestVehicles {
 
     @Test
-    public void test1() {
-       
+    public void test1() {       
+        
+       Motorbike mb = new Motorbike();
+        
+       Double price = mb.calculateFee();
+       assertEquals(3.00, price, 0);
     }
 
  

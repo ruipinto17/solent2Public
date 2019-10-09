@@ -42,5 +42,5 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-      
+    <name>factoryandfacade</name>
 </project>

@@ -4,6 +4,11 @@ public class Lorry extends Vehicle {
 
     @Override
     public Double calculateFee() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+        double maxWeight = 8000;
+       
+        
+        return (getWeight() < maxWeight) ? 10.00 : 15.00;
+            
     }
 }

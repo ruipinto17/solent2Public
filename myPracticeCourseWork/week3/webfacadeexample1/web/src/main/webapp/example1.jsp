@@ -8,7 +8,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello Rui!</h1>
-        <!-- <h1>Hello World! new java.util.Date().toString()</h1> -->
+        
+        <h1>Hello Rui! <%=new java.util.Date().toString()%></h1>
     </body>
 </html>

@@ -32,9 +32,6 @@
     String animalNameStr = request.getParameter("animalName");
     String animalTypeStr = request.getParameter("animalType");
 
-    if (animalNameStr != null && animalTypeStr != null) {
-        farmFacade.addAnimal(animalTypeStr, animalNameStr);
-    }
 %>
 
 <html>
@@ -42,29 +39,27 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page Farm</title>
     </head>
+
+    <!-- works with http://localhost:8080/basicfacadeweb/example2.jsp?animalType=emue&animalName=Fred -->
+    <%        if (animalNameStr != null || animalTypeStr != null) {
+
+    %>
+    <p>create animal type= <%=animalTypeStr %> name= <%=animalNameStr %></p>
+
+    <%}
+    %>
+
     <body>
         <p>Page for Farm</p>
         <p>Supported Animal Types</p>
-        <table>            
-
+        <table>
             <% for (String animalType : supportedAnimalTypes) {%>
-            <tr> 
-                <td><%=animalType%></td>            
-
-                <td>
-                    <form action="./example2.jsp">
-                        <input type="hidden" name="animalType" value="<%=animalType%>">
-                        Animal name: <input type="text" name="animalName">
-                        <button type="submit" >create <%=animalType%></button>
-                    </form>
-                </td>
-
+            <tr>
+                <td><%=animalType%></td>
             </tr>
             <%
                 }
-            %>           
-
-
+            %>
         </table> 
 
         <p>Animals on Farm</p>

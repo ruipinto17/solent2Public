@@ -54,7 +54,8 @@ public class AnimalDaoJaxbImpl extends AnimalDaoImpl implements AnimalDao {
 
             jaxbUnMarshaller = jaxbContext.createUnmarshaller();
 
-        } catch (JAXBException e) {
+        }
+        catch (JAXBException e) {
             throw new RuntimeException("problem setting up jaxb marshalling", e);
         }
 

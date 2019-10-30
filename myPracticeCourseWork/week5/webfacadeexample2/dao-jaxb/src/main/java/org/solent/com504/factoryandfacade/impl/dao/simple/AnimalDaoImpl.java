@@ -30,7 +30,7 @@ public class AnimalDaoImpl implements AnimalDao {
 
         // check if trying to update existing animal
         if (id != null) {
-            update = retrieve(animal.getId());
+            update = retrieve(animal.getId());           
 
             // cannot update non existing id
             if (update == null) {

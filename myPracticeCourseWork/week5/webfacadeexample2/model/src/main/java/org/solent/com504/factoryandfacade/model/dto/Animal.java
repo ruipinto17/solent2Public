@@ -61,4 +61,8 @@ public class Animal {
         return "Animal{" + "name=" + name + ", address=" + address + ", animalType=" + animalType + ", id=" + id + '}';
     }
 
+    public Long setId(int i) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }
